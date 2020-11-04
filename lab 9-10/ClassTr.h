@@ -15,16 +15,16 @@ public:
     Triangle() : a(0), b(0), c(0) {}
     Triangle(double a, double b, double c) : a(a), b(b), c(c) {}
     Triangle(const Triangle& other) : a(other.a), b(other.b), c(other.c) {}
-    // стороны
+    
     ~Triangle() {}
-    double perimeter() const { return a + b + c; }//периметр
-    double area() const//площадь
+    double perimeter() const { return a + b + c; }
+    double area() const
     {
         double p = (b * b + c * c - a * a) / (2.0 * c * b);
         double angle_a = acos(p - static_cast<int>(p));
         return (b * c * sin(angle_a)) / 2.0;
     }
-    bool is_possible() const { return ((a + b) > c) || ((b + c) > a) || ((a + c) > b); } //существование
+    bool is_possible() const { return ((a + b) > c) || ((b + c) > a) || ((a + c) > b); }
    
 
   
@@ -33,9 +33,9 @@ public:
     {
         o << "a: " << T.a << ", b: " << T.b << ", c: " << T.c << ". ";
         if (T.is_possible())
-            o << "Площадь: " << T.area() << ", Периметр: " << T.perimeter();
+            o << "ДЋГ«Г®ЕЇЕ•Г¤Гј: " << T.area() << ", ДЋДєД‘ДЌД›ДєЕ€Д‘: " << T.perimeter();
         else
-            o << "Треугольник не существует";
+            o << "Е‡Д‘ДєГіДѓГ®Г«ГјГ­ДЌД™ Г­Дє Е„ГіЕЇДєЕ„Е€ГўГіДєЕ€";
         return o;
     }
 };
