@@ -1,4 +1,0 @@
-﻿  MyForm.cpp
-C:\Users\Neuromancer\source\repos\Project6\Project6\MyForm.cpp(6,32): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
-  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Project6.vcxproj -> C:\Users\Neuromancer\source\repos\Project6\Debug\Project6.exe
